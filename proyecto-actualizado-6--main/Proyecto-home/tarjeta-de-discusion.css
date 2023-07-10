@@ -1,0 +1,278 @@
+
+.card-discusion {
+   border-radius: 30px;
+   background: #212121;
+   box-shadow: 15px 15px 30px rgb(25, 25, 25),
+       -15px -15px 30px rgb(60, 60, 60);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 100%;
+   max-height: 100%;
+   width: 1395px;
+   height: 925px;
+}
+
+@media (max-width: 768px) {
+   .card-discusion {
+   width: 50%;
+   height: auto;
+   top: 40%;
+   left: 50%;
+   transform: translateX(-50%);
+   }
+   }
+
+
+   /*cuadro para comentar*/
+
+   .input {
+      background-color: #212121;
+      width: 100%;
+      max-width: 850px;
+      height: auto;
+      line-height: 1.5;
+      min-height: 45px;
+      padding: 15px;
+      border: 2px solid white;
+      border-radius: 5px;
+       box-shadow: 3px 3px 2px rgb(249, 255, 85); 
+      position: absolute;
+      top: 340px;
+      left: 100px;
+      margin-top: 40px;
+      margin-left: 60px;
+      resize: none;
+      overflow-y: auto;
+      word-wrap: normal;
+      white-space: pre-wrap;
+      word-break: break-all;
+     color: white;
+     position: fixed;
+
+    }
+    
+    .input:focus {
+      color: rgb(0, 255, 255);
+      background-color: #212121;
+      outline-color: rgb(0, 255, 255);
+      box-shadow: -3px -3px 15px rgb(0, 255, 255);
+      transition: .1s;
+      transition-property: box-shadow;
+    }
+
+
+    /*user card */
+
+    .card-2 {
+      width: 120px;
+      height: 110px;
+      margin-top: -585px;
+      margin-left: 20px;
+      border-radius: 30px;
+      background-image: url(no-user-picture.jpg);
+      background-size: cover;
+      background-position:center ;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+      position: relative;
+      font-family: inherit;
+
+    }
+
+
+    /* add photo  */
+
+    .add-btn { /* Agregado */
+      position: absolute;
+      top: 430px;
+      right: 375px;
+      margin: 10px;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #cdcdcd;
+      background: white;
+      border-radius: 25px;
+      overflow: hidden;
+      transition: width 0.2s ease-in-out;
+      font-weight: 500;
+      font-family: inherit;
+    }
+    
+    .add-btn:hover { /* Agregado */
+      width: 120px;
+    }
+
+    .icon-btn {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #cdcdcd;
+      background: white;
+      border-radius: 25px;
+      overflow: hidden;
+      position: absolute;
+      transition: width 0.2s ease-in-out;
+      font-weight: 500;
+      font-family: inherit;
+    }
+    
+    .add-btn:hover {
+      width: 120px;
+    }
+    
+    .add-btn::before,
+    .add-btn::after {
+      transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 10px;
+      top: calc(50% - 2px);
+      background: seagreen;
+    }
+    
+    .add-btn::after {
+      right: 14px;
+      overflow: hidden;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+    
+    .add-btn::before {
+      left: 14px;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+    
+    .icon-btn:focus {
+      outline: none;
+    }
+    
+    .btn-txt {
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    
+    .add-btn:hover::before,
+    .add-btn:hover::after {
+      width: 4px;
+      border-radius: 2px;
+    }
+    
+    .add-btn:hover .btn-txt {
+      opacity: 1;
+    }
+    
+    .add-icon::after,
+    .add-icon::before {
+      transition: all 0.2s ease-in-out;
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 2px;
+      top: calc(50% - 10px);
+      background: seagreen;
+      overflow: hidden;
+    }
+    
+    .add-icon::before {
+      left: 22px;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+    
+    .add-icon::after {
+      right: 22px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+    
+    .add-btn:hover .add-icon::before {
+      left: 15px;
+      height: 4px;
+      top: calc(50% - 2px);
+    }
+    
+    .add-btn:hover .add-icon::after {
+      right: 15px;
+      height: 4px;
+      top: calc(50% - 2px);
+    }
+
+    /* Send Button */
+
+    button {
+      font-family: inherit;
+      font-size: 18px;
+      background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
+      color: rgb(0, 0, 0);
+      padding: 0.8em 1.2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 25px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s;
+      position: absolute;
+
+      top: 372px;
+      right: 235px;
+      margin: 10px;
+      height: 50px;
+      border: 1px solid #cdcdcd;
+      background: white;
+      border-radius: 25px;
+      overflow: hidden;
+      transition: width 0.2s ease-in-out;
+      font-weight: 500;
+      font-family: inherit;
+     
+    }
+    
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+      width: 120px;
+
+    }
+    
+    button:active {
+      transform: scale(0.95);
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    button span {
+      display: block;
+      margin-left: 0.4em;
+      transition: all 0.3s;
+    }
+    
+    button svg {
+      width: 18px;
+      height: 18px;
+      fill: white;
+      transition: all 0.3s;
+    }
+    
+    button .svg-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin-right: 0.5em;
+      transition: all 0.3s;
+    }
+    
+    button:hover .svg-wrapper {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    button:hover svg {
+      transform: rotate(45deg);
+    }
+    
+    
